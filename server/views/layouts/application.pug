@@ -3,7 +3,7 @@ include ../mixins/forms.pug
 doctype html
 html(lang="en")
   head
-    title Hexlet Fastify Boilerplate
+    title Task manager
     script(src=assetPath('main.js'))
     link(href=assetPath('main.css') rel="stylesheet")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
@@ -37,6 +37,6 @@ html(lang="en")
         block header
       block content
 
-    footer
-      .container.my-5.pt-4.border-top
-        a(target="_blank" href="https://ru.hexlet.io") Hexlet
+    footer.bg-dark.text-light
+      .container.my-5.pt-4
+        a(target="_blank" href="https://ru.hexlet.io") © Hexlet Ltd, 2022
