@@ -17,3 +17,5 @@ block content
           td= user.firstName
           td= user.lastName
           td= formatDate(user.createdAt)
+          td.d-flex
+            a.btn.btn-dark.m-1(href='/users/' + user.id + '/edit')= t('views.users.edit.submit')
